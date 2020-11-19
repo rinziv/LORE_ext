@@ -4,7 +4,7 @@ import pandas as pd
 from collections import defaultdict
 
 from scipy.io import arff
-from skmultilearn.dataset import load_from_arff
+# from skmultilearn.dataset import load_from_arff
 
 
 def prepare_dataset(df, class_name):
@@ -59,7 +59,8 @@ def one_hot_encoding(df, class_name):
         dfX = pd.get_dummies(df[[c for c in df.columns if c != class_name]], prefix_sep='=')
         class_name_map = {v: k for k, v in enumerate(sorted(df[class_name].unique()))}
         dfY = df[class_name].map(class_name_map)
-        df = pd.concat([dfX, dfY], axis=1, join_axes=[dfX.index])
+        df = pd.concat([dfX, dfY], axis=1)
+        df =df.reindex(dfX.index)
         feature_names = list(dfX.columns)
         class_values = sorted(class_name_map)
     else: # isinstance(class_name, list)
@@ -67,7 +68,8 @@ def one_hot_encoding(df, class_name):
         # class_name_map = {v: k for k, v in enumerate(sorted(class_name))}
         class_values = sorted(class_name)
         dfY = df[class_values]
-        df = pd.concat([dfX, dfY], axis=1, join_axes=[dfX.index])
+        df = pd.concat([dfX, dfY], axis=1)
+        df = df.reindex(dfX.index)
         feature_names = list(dfX.columns)
     return df, feature_names, class_values
 
