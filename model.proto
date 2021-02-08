@@ -6,13 +6,13 @@ package cnr.kdd.lore.tabular.v1;
 
 // Input
 message TupleInstance {
-  repeated float field = 1;
+  repeated int32 field = 1;
 }
 
 // Output
 message TupleExplanation {
   string rule = 1;
-  string counter_rule = 2;
+//  string counter_rule = 2;
 }
 
 // Service for explanation

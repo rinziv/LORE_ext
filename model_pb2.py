@@ -19,7 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x0bmodel.proto\x12\x17\x63nr.kdd.lore.tabular.v1\"\x1e\n\rTupleInstance\x12\r\n\x05\x66ield\x18\x01 \x03(\x02\"6\n\x10TupleExplanation\x12\x0c\n\x04rule\x18\x01 \x01(\t\x12\x14\n\x0c\x63ounter_rule\x18\x02 \x01(\t2z\n\x14LoreTabularExplainer\x12\x62\n\rexplain_tuple\x12&.cnr.kdd.lore.tabular.v1.TupleInstance\x1a).cnr.kdd.lore.tabular.v1.TupleExplanationb\x06proto3'
+  serialized_pb=b'\n\x0bmodel.proto\x12\x17\x63nr.kdd.lore.tabular.v1\"\x1e\n\rTupleInstance\x12\r\n\x05\x66ield\x18\x01 \x03(\x05\" \n\x10TupleExplanation\x12\x0c\n\x04rule\x18\x01 \x01(\t2z\n\x14LoreTabularExplainer\x12\x62\n\rexplain_tuple\x12&.cnr.kdd.lore.tabular.v1.TupleInstance\x1a).cnr.kdd.lore.tabular.v1.TupleExplanationb\x06proto3'
 )
 
 
@@ -35,7 +35,7 @@ _TUPLEINSTANCE = _descriptor.Descriptor(
   fields=[
     _descriptor.FieldDescriptor(
       name='field', full_name='cnr.kdd.lore.tabular.v1.TupleInstance.field', index=0,
-      number=1, type=2, cpp_type=6, label=3,
+      number=1, type=5, cpp_type=1, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -72,13 +72,6 @@ _TUPLEEXPLANATION = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='counter_rule', full_name='cnr.kdd.lore.tabular.v1.TupleExplanation.counter_rule', index=1,
-      number=2, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=b"".decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -92,7 +85,7 @@ _TUPLEEXPLANATION = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=72,
-  serialized_end=126,
+  serialized_end=104,
 )
 
 DESCRIPTOR.message_types_by_name['TupleInstance'] = _TUPLEINSTANCE
@@ -122,8 +115,8 @@ _LORETABULAREXPLAINER = _descriptor.ServiceDescriptor(
   index=0,
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_start=128,
-  serialized_end=250,
+  serialized_start=106,
+  serialized_end=228,
   methods=[
   _descriptor.MethodDescriptor(
     name='explain_tuple',
