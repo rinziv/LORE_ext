@@ -1,0 +1,21 @@
+//Version of protobuf
+syntax = "proto3";
+
+//Unique Name
+package cnr.kdd.lore.tabular.v1;
+
+// Input
+message TupleInstance {
+  repeated float field = 1;
+}
+
+// Output
+message TupleExplanation {
+  string rule = 1;
+  string counter_rule = 2;
+}
+
+// Service for explanation
+service LoreTabularExplainer {
+  rpc explain_tuple(TupleInstance) returns (TupleExplanation);
+}
