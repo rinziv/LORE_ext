@@ -1,6 +1,6 @@
-========
+==============
 LORE Explainer
-========
+==============
 
 LORE (LOcal Rule-based Explanations) is a model-agnostic explanator capable of producing rules to provide insight on the motivation a AI-based black box provides a specific outcome for an input instance.
 

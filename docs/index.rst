@@ -1,6 +1,6 @@
-========
+======================
 LORE Explainer library
-========
+======================
 
 This is the documentation of **LORE Explainer library**.
 
