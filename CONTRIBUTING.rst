@@ -75,9 +75,6 @@ and use Python's built-in web server for a preview in your web browser
 Code Contributions
 ==================
 
-.. todo:: prepare a descriptio of the internals of the project.
-
-
 Submit an issue
 ---------------
 
@@ -117,16 +114,6 @@ Clone the repository
 
    to be able to import the package under development in the Python REPL.
 
-   .. todo:: if you are not using pre-commit, please remove the following item:
-
-#. Install |pre-commit|_::
-
-    pip install pre-commit
-    pre-commit install
-
-   ``LORE_ext`` comes with a lot of hooks configured to automatically help the
-   developer to check the code being written.
-
 Implement your changes
 ----------------------
 
@@ -147,13 +134,6 @@ Implement your changes
     git commit
 
    to record your changes in git_.
-
-   .. todo:: if you are not using pre-commit, please remove the following item:
-
-   Please make sure to see the validation messages from |pre-commit|_ and fix
-   any eventual issues.
-   This should automatically use flake8_/black_ to check/fix the code style
-   in a way that is compatible with the project.
 
    .. important:: Don't forget to add unit tests and documentation in case your
       contribution adds an additional feature and is not just a bugfix.
@@ -184,11 +164,10 @@ Submit your contribution
 #. Go to the web page of your fork and click |contribute button|
    to send your changes for review.
 
-   .. todo:: if you are using GitHub, you can uncomment the following paragraph
 
-      Find more detailed information in `creating a PR`_. You might also want to open
-      the PR as a draft first and mark it as ready for review after the feedbacks
-      from the continuous integration (CI) system or any required fixes.
+  Find more detailed information in `creating a PR`_. You might also want to open
+  the PR as a draft first and mark it as ready for review after the feedbacks
+  from the continuous integration (CI) system or any required fixes.
 
 
 Troubleshooting
@@ -244,11 +223,6 @@ Maintainer tasks
 Releases
 --------
 
-.. todo:: This section assumes you are using PyPI to publicly release your package.
-
-   If instead you are using a different/private package index, please update
-   the instructions accordingly.
-
 If you are part of the group of maintainers and have correct user permissions
 on PyPI_, the following steps can be used to release a new version for
 ``LORE_ext``:
@@ -275,13 +249,11 @@ on PyPI_, the following steps can be used to release a new version for
 
 
 .. <-- strart -->
-.. todo:: Please review and change the following definitions:
-
 .. |the repository service| replace:: GitHub
 .. |contribute button| replace:: "Create pull request"
 
-.. _repository: https://github.com/<USERNAME>/LORE_ext
-.. _issue tracker: https://github.com/<USERNAME>/LORE_ext/issues
+.. _repository: https://github.com/rinziv/LORE_ext
+.. _issue tracker: https://github.com/rinziv/LORE_ext/issues
 .. <-- end -->
 
 
