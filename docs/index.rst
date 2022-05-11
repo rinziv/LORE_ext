@@ -1,26 +1,13 @@
 ========
-LORE_ext
+LORE Explainer library
 ========
 
-This is the documentation of **LORE_ext**.
+This is the documentation of **LORE Explainer library**.
 
-.. note::
+LORE (LOcal Rule-based Explanations) is a model-agnostic explanator capable of producing rules to provide insight on the motivation a AI-based black box provides a specific outcome for an input instance.
 
-    This is the main page of your project's `Sphinx`_ documentation.
-    It is formatted in `reStructuredText`_. Add additional pages
-    by creating rst-files in ``docs`` and adding them to the `toctree`_ below.
-    Use then `references`_ in order to link them from this page, e.g.
-    :ref:`authors` and :ref:`changes`.
 
-    It is also possible to refer to the documentation of other Python packages
-    with the `Python domain syntax`_. By default you can reference the
-    documentation of `Sphinx`_, `Python`_, `NumPy`_, `SciPy`_, `matplotlib`_,
-    `Pandas`_, `Scikit-Learn`_. You can add more by extending the
-    ``intersphinx_mapping`` in your Sphinx's ``conf.py``.
-
-    The pretty useful extension `autodoc`_ is activated by default and lets
-    you include documentation from docstrings. Docstrings can be written in
-    `Google style`_ (recommended!), `NumPy style`_ and `classical style`_.
+The method of LORE does not make any assumption on the classifier that is used for labeling. The approach used by LORE exploits the exploration of a neighborhood of the input instance, based on a genetic algorithm to generate synthetic instances, to learn a local transparent model, which can be interpreted locally by the analyst.
 
 
 Contents

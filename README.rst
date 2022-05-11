@@ -1,43 +1,11 @@
-.. These are examples of badges you might want to add to your README:
-   please update the URLs accordingly
-
-    .. image:: https://api.cirrus-ci.com/github/<USER>/LORE_ext.svg?branch=main
-        :alt: Built Status
-        :target: https://cirrus-ci.com/github/<USER>/LORE_ext
-    .. image:: https://readthedocs.org/projects/LORE_ext/badge/?version=latest
-        :alt: ReadTheDocs
-        :target: https://LORE_ext.readthedocs.io/en/stable/
-    .. image:: https://img.shields.io/coveralls/github/<USER>/LORE_ext/main.svg
-        :alt: Coveralls
-        :target: https://coveralls.io/r/<USER>/LORE_ext
-    .. image:: https://img.shields.io/pypi/v/LORE_ext.svg
-        :alt: PyPI-Server
-        :target: https://pypi.org/project/LORE_ext/
-    .. image:: https://img.shields.io/conda/vn/conda-forge/LORE_ext.svg
-        :alt: Conda-Forge
-        :target: https://anaconda.org/conda-forge/LORE_ext
-    .. image:: https://pepy.tech/badge/LORE_ext/month
-        :alt: Monthly Downloads
-        :target: https://pepy.tech/project/LORE_ext
-    .. image:: https://img.shields.io/twitter/url/http/shields.io.svg?style=social&label=Twitter
-        :alt: Twitter
-        :target: https://twitter.com/LORE_ext
-
-.. image:: https://img.shields.io/badge/-PyScaffold-005CA0?logo=pyscaffold
-    :alt: Project generated with PyScaffold
-    :target: https://pyscaffold.org/
-
-|
-
 ========
-LORE_ext
+LORE Explainer
 ========
 
+LORE (LOcal Rule-based Explanations) is a model-agnostic explanator capable of producing rules to provide insight on the motivation a AI-based black box provides a specific outcome for an input instance.
 
-    Add a short description here!
 
-
-A longer description of your project goes here...
+The method of LORE does not make any assumption on the classifier that is used for labeling. The approach used by LORE exploits the exploration of a neighborhood of the input instance, based on a genetic algorithm to generate synthetic instances, to learn a local transparent model, which can be interpreted locally by the analyst.
 
 
 .. _pyscaffold-notes:
