@@ -1,33 +1,8 @@
-.. todo:: THIS IS SUPPOSED TO BE AN EXAMPLE. MODIFY IT ACCORDING TO YOUR NEEDS!
-
-   The document assumes you are using a source repository service that promotes a
-   contribution model similar to `GitHub's fork and pull request workflow`_.
-   While this is true for the majority of services (like GitHub, GitLab,
-   BitBucket), it might not be the case for private repositories (e.g., when
-   using Gerrit).
-
-   Also notice that the code examples might refer to GitHub URLs or the text
-   might use GitHub specific terminology (e.g., *Pull Request* instead of *Merge
-   Request*).
-
-   Please make sure to check the document having these assumptions in mind
-   and update things accordingly.
-
-.. todo:: Provide the correct links/replacements at the bottom of the document.
-
-.. todo:: You might want to have a look on `PyScaffold's contributor's guide`_,
-
-   especially if your project is open source. The text should be very similar to
-   this template, but there are a few extra contents that you might decide to
-   also include, like mentioning labels of your issue tracker or automated
-   releases.
-
-
 ============
 Contributing
 ============
 
-Welcome to ``LORE_ext`` contributor's guide.
+Welcome to ``LORE Explainer`` contributor's guide.
 
 This document focuses on getting any potential contributor familiarized
 with the development processes, but `other kinds of contributions`_ are also
@@ -46,7 +21,7 @@ guidelines.
 Issue Reports
 =============
 
-If you experience bugs or general issues with ``LORE_ext``, please have a look
+If you experience bugs or general issues with ``LORE Explainer``, please have a look
 on the `issue tracker`_. If you don't see anything useful there, please feel
 free to fire an issue report.
 
@@ -65,32 +40,26 @@ you help us to identify the root cause of the issue.
 Documentation Improvements
 ==========================
 
-You can help improve ``LORE_ext`` docs by making them more readable and coherent, or
+You can help improve ``LORE Explainer`` docs by making them more readable and coherent, or
 by adding missing information and correcting mistakes.
 
-``LORE_ext`` documentation uses Sphinx_ as its main documentation compiler.
+``LORE Explainer`` documentation uses Sphinx_ as its main documentation compiler.
 This means that the docs are kept in the same repository as the project code, and
 that any documentation update is done in the same way was a code contribution.
 
-.. todo:: Don't forget to mention which markup language you are using.
+.. tip::
+  Please notice that the `GitHub web interface`_ provides a quick way of
+  propose changes in ``LORE Explainer``'s files. While this mechanism can
+  be tricky for normal code contributions, it works perfectly fine for
+  contributing to the docs, and can be quite handy.
 
-    e.g.,  reStructuredText_ or CommonMark_ with MyST_ extensions.
-
-.. todo:: If your project is hosted on GitHub, you can also mention the following tip:
-
-   .. tip::
-      Please notice that the `GitHub web interface`_ provides a quick way of
-      propose changes in ``LORE_ext``'s files. While this mechanism can
-      be tricky for normal code contributions, it works perfectly fine for
-      contributing to the docs, and can be quite handy.
-
-      If you are interested in trying this method out, please navigate to
-      the ``docs`` folder in the source repository_, find which file you
-      would like to propose changes and click in the little pencil icon at the
-      top, to open `GitHub's code editor`_. Once you finish editing the file,
-      please write a message in the form at the bottom of the page describing
-      which changes have you made and what are the motivations behind them and
-      submit your proposal.
+  If you are interested in trying this method out, please navigate to
+  the ``docs`` folder in the source repository_, find which file you
+  would like to propose changes and click in the little pencil icon at the
+  top, to open `GitHub's code editor`_. Once you finish editing the file,
+  please write a message in the form at the bottom of the page describing
+  which changes have you made and what are the motivations behind them and
+  submit your proposal.
 
 When working on documentation changes in your local machine, you can
 compile them using |tox|_::
@@ -106,11 +75,8 @@ and use Python's built-in web server for a preview in your web browser
 Code Contributions
 ==================
 
-.. todo:: Please include a reference or explanation about the internals of the project.
+.. todo:: prepare a descriptio of the internals of the project.
 
-   An architecture description, design principles or at least a summary of the
-   main concepts will make it easy for potential contributors to get started
-   quickly.
 
 Submit an issue
 ---------------
