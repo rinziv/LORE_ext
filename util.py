@@ -49,7 +49,7 @@ def calculate_feature_values(X, numeric_columns_index, categorical_use_prob=Fals
             new_values = np.array([unique_values[0]] * size)
         else:
             if i in numeric_columns_index:
-                values = values.astype(np.float)
+                values = values.astype(np.float64)
                 if continuous_fun_estimation:
                     new_values = get_distr_values(values, size)
                 else:  # suppose is gaussian
