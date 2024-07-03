@@ -257,6 +257,10 @@ class GeneticGenerator(NeighborhoodGenerator):
 
         y = self.bb_predict(x.reshape(1, -1))[0]
         y1 = self.bb_predict(x1.reshape(1, -1))[0]
+        if (y.shape == ()):
+            y = self.bb_predict(x.reshape(1, -1))
+        if (y1.shape == ()):
+            y1 = self.bb_predict(x1.reshape(1, -1))
 
         target_similarity_score = 1.0 - hamming(y, y1)
         # target_similarity = target_similarity_score if target_similarity_score >= self.eta2 else 0.0
@@ -272,6 +276,10 @@ class GeneticGenerator(NeighborhoodGenerator):
 
         y = self.bb_predict(x.reshape(1, -1))[0]
         y1 = self.bb_predict(x1.reshape(1, -1))[0]
+        if (y.shape == ()):
+            y = self.bb_predict(x.reshape(1, -1))
+        if (y1.shape == ()):
+            y1 = self.bb_predict(x1.reshape(1, -1))
 
         target_similarity_score = 1.0 - hamming(y, y1)
         # target_similarity = target_similarity_score if target_similarity_score < self.eta2 else 0.0
